@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Word Shuffler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Word Shuffler</h1>
+            <p>Send a text file to this web service and you'll get the shuffled text back!</p>
+        </div>
+        <p>Example:</p>
+        <pre> $ curl -X POST -F file=@test.txt http://localhost:5000 </pre>
+    </div>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+</body>
